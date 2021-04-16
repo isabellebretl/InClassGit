@@ -1,4 +1,6 @@
 import random
+import string
 
 def password(a):
-    for i in range(0, a):
+    pwd = string.ascii_letters
+    print ( ''.join(random.choice(pwd) for i in range(a)) )
